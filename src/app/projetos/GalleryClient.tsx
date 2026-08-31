@@ -43,8 +43,8 @@ export function GalleryClient() {
           onClick={() => setFilter("todos")}
           className={`shrink-0 whitespace-nowrap rounded-md px-4 py-2 text-xs font-semibold uppercase tracking-[0.08em] transition-colors ${
             filter === "todos"
-              ? "bg-accent text-white"
-              : "bg-border/60 text-muted hover:bg-accent hover:text-white"
+              ? "bg-ink text-white"
+              : "bg-border/60 text-muted hover:bg-ink hover:text-white"
           }`}
         >
           Todos
@@ -56,8 +56,8 @@ export function GalleryClient() {
             onClick={() => setFilter(cat)}
             className={`shrink-0 whitespace-nowrap rounded-md px-4 py-2 text-xs font-semibold uppercase tracking-[0.08em] transition-colors ${
               filter === cat
-                ? "bg-accent text-white"
-                : "bg-border/60 text-muted hover:bg-accent hover:text-white"
+                ? "bg-ink text-white"
+                : "bg-border/60 text-muted hover:bg-ink hover:text-white"
             }`}
           >
             {projectCategoryLabels[cat]}
@@ -92,7 +92,7 @@ export function GalleryClient() {
           <button
             type="button"
             onClick={() => setVisibleCount((v) => v + PAGE_SIZE)}
-            className="rounded-md bg-accent px-8 py-3.5 font-display text-sm font-bold uppercase tracking-[0.04em] text-white transition-colors duration-300 hover:bg-accent-dark"
+            className="rounded-md bg-ink px-8 py-3.5 font-display text-sm font-bold uppercase tracking-[0.04em] text-white transition-colors duration-300 hover:bg-ink-soft"
           >
             Carregar mais fotos
           </button>

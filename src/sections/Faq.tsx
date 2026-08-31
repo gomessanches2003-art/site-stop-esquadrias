@@ -117,7 +117,7 @@ function FaqItem({
         </span>
         <span
           aria-hidden
-          className="relative mt-1 grid h-7 w-7 shrink-0 place-items-center rounded-md bg-accent"
+          className="relative mt-1 grid h-7 w-7 shrink-0 place-items-center rounded-md bg-ink"
         >
           <span className="absolute h-px w-3 bg-paper" />
           <span

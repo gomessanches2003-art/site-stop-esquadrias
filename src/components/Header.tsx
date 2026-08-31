@@ -39,7 +39,7 @@ export function Header() {
           aria-expanded={open}
           aria-controls="mobile-menu"
           aria-label={open ? "Fechar menu" : "Abrir menu"}
-          className="grid h-10 w-10 place-items-center rounded-md bg-accent lg:hidden"
+          className="grid h-10 w-10 place-items-center rounded-md bg-ink lg:hidden"
         >
           <span className="relative block h-3.5 w-4.5" aria-hidden>
             <span
