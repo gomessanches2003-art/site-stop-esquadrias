@@ -72,7 +72,7 @@ export function Projetos() {
         headerAction={
           <Link
             href="/projetos"
-            className="inline-flex w-fit items-center gap-2 whitespace-nowrap rounded-md bg-ink px-6 py-3.5 text-sm font-semibold uppercase tracking-[0.06em] text-white transition-colors hover:bg-ink-soft"
+            className="inline-flex w-fit items-center gap-2 whitespace-nowrap rounded-md bg-accent px-6 py-3.5 text-sm font-semibold uppercase tracking-[0.06em] text-white transition-colors hover:bg-accent-dark"
           >
             Ver todos os projetos →
           </Link>

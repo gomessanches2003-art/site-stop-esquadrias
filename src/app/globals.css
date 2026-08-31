@@ -12,6 +12,9 @@
   --color-accent: var(--color-brand-red);
   --color-accent-dark: var(--color-brand-red-dark);
   --color-accent-soft: #fbe4e2;
+  --color-whatsapp: #25d366;
+  --color-whatsapp-dark: #1da851;
+  --color-whatsapp-ink: #0b3d1f;
 
   /* shadcn/ui tokens (raw HSL triplets), mapped to the palette above so
      off-the-shelf shadcn components (Button, Carousel) match the brand
@@ -42,6 +45,9 @@
   --color-accent-soft: var(--color-accent-soft);
   --color-brand-red: var(--color-brand-red);
   --color-brand-red-dark: var(--color-brand-red-dark);
+  --color-whatsapp: var(--color-whatsapp);
+  --color-whatsapp-dark: var(--color-whatsapp-dark);
+  --color-whatsapp-ink: var(--color-whatsapp-ink);
   --font-display: var(--font-manrope);
   --font-sans: var(--font-inter);
 

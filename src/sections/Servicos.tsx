@@ -16,7 +16,7 @@ export function Servicos() {
           </h2>
           <Link
             href="/servicos"
-            className="mt-8 inline-flex w-fit items-center gap-2 rounded-md bg-ink px-6 py-3.5 font-display text-sm font-bold uppercase tracking-[0.04em] text-white transition-colors duration-300 hover:bg-ink-soft"
+            className="mt-8 inline-flex w-fit items-center gap-2 rounded-md bg-accent px-6 py-3.5 font-display text-sm font-bold uppercase tracking-[0.04em] text-white transition-colors duration-300 hover:bg-accent-dark"
           >
             Ver todos os serviços →
           </Link>

@@ -44,7 +44,7 @@ export function EsquadriasGallery() {
           <button
             type="button"
             onClick={() => setVisibleCount((v) => v + PAGE_SIZE)}
-            className="rounded-md bg-ink px-8 py-3.5 font-display text-sm font-bold uppercase tracking-[0.04em] text-white transition-colors duration-300 hover:bg-ink-soft"
+            className="rounded-md bg-accent px-8 py-3.5 font-display text-sm font-bold uppercase tracking-[0.04em] text-white transition-colors duration-300 hover:bg-accent-dark"
           >
             Carregar mais fotos
           </button>
