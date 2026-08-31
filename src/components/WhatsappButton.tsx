@@ -8,13 +8,10 @@ type Props = {
 };
 
 const variantClasses: Record<NonNullable<Props["variant"]>, string> = {
-  solid: "bg-accent text-white hover:bg-accent-dark",
-  "outline-dark":
-    "border border-ink text-ink hover:bg-ink hover:text-white",
-  "outline-light":
-    "border border-white/70 text-white hover:bg-white hover:text-ink",
-  "premium-primary":
-    "border-b-2 border-accent bg-ink text-white hover:bg-accent",
+  solid: "rounded-md bg-accent text-white hover:bg-accent-dark",
+  "outline-dark": "rounded-md bg-ink text-white hover:bg-ink-soft",
+  "outline-light": "rounded-md bg-white text-ink hover:bg-paper",
+  "premium-primary": "rounded-md bg-ink text-white hover:bg-accent",
 };
 
 export function WhatsappButton({

@@ -66,7 +66,7 @@ export default function ServicosPage() {
                   {service.slug === "esquadrias-de-aluminio" && (
                     <Link
                       href="/esquadrias"
-                      className="inline-flex items-center justify-center gap-2 border border-ink px-6 py-3.5 text-sm font-semibold uppercase tracking-[0.06em] text-ink transition-colors hover:bg-ink hover:text-white"
+                      className="inline-flex items-center justify-center gap-2 rounded-md bg-ink px-6 py-3.5 text-sm font-semibold uppercase tracking-[0.06em] text-white transition-colors hover:bg-ink-soft"
                     >
                       Ver página completa →
                     </Link>

@@ -39,21 +39,21 @@ export function Header() {
           aria-expanded={open}
           aria-controls="mobile-menu"
           aria-label={open ? "Fechar menu" : "Abrir menu"}
-          className="grid h-10 w-10 place-items-center border border-ink lg:hidden"
+          className="grid h-10 w-10 place-items-center rounded-md bg-ink lg:hidden"
         >
           <span className="relative block h-3.5 w-4.5" aria-hidden>
             <span
-              className={`absolute left-0 top-0 h-0.5 w-4.5 bg-ink transition-transform ${
+              className={`absolute left-0 top-0 h-0.5 w-4.5 bg-paper transition-transform ${
                 open ? "translate-y-[7px] rotate-45" : ""
               }`}
             />
             <span
-              className={`absolute left-0 top-1/2 h-0.5 w-4.5 -translate-y-1/2 bg-ink transition-opacity ${
+              className={`absolute left-0 top-1/2 h-0.5 w-4.5 -translate-y-1/2 bg-paper transition-opacity ${
                 open ? "opacity-0" : "opacity-100"
               }`}
             />
             <span
-              className={`absolute left-0 bottom-0 h-0.5 w-4.5 bg-ink transition-transform ${
+              className={`absolute left-0 bottom-0 h-0.5 w-4.5 bg-paper transition-transform ${
                 open ? "-translate-y-[7px] -rotate-45" : ""
               }`}
             />

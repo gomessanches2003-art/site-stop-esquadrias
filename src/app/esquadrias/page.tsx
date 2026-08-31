@@ -126,7 +126,7 @@ export default function EsquadriasPage() {
             </WhatsappButton>
             <Link
               href="/servicos"
-              className="inline-flex items-center justify-center gap-2 border border-white/70 px-6 py-3.5 text-sm font-semibold uppercase tracking-[0.06em] text-white transition-colors hover:bg-white hover:text-ink"
+              className="inline-flex items-center justify-center gap-2 rounded-md bg-white px-6 py-3.5 text-sm font-semibold uppercase tracking-[0.06em] text-ink transition-colors hover:bg-paper"
             >
               Ver outros serviços →
             </Link>

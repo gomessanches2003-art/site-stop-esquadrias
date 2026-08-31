@@ -4,8 +4,8 @@ export function AreaAtendimento() {
   return (
     <section className="border-y border-border bg-paper py-14">
       <div className="mx-auto flex max-w-7xl flex-col items-center gap-3 px-5 text-center md:px-8">
-        <span aria-hidden className="grid h-11 w-11 place-items-center border border-ink">
-          <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="1.5">
+        <span aria-hidden className="grid h-11 w-11 place-items-center rounded-md bg-ink">
+          <svg viewBox="0 0 24 24" className="h-5 w-5 text-white" fill="none" stroke="currentColor" strokeWidth="1.5">
             <path
               strokeLinecap="round"
               strokeLinejoin="round"

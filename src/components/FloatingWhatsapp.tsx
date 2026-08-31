@@ -4,7 +4,7 @@ import { WhatsappIcon } from "@/components/WhatsappButton";
 export function FloatingWhatsapp() {
   return (
     <div className="fixed bottom-5 right-5 z-50 flex items-center gap-3">
-      <p className="hidden max-w-[13rem] border border-border bg-surface px-4 py-3 text-sm leading-snug text-ink shadow-sm sm:block">
+      <p className="hidden max-w-[13rem] rounded-md bg-surface px-4 py-3 text-sm leading-snug text-ink shadow-md sm:block">
         Alguma dúvida?
         <br />
         Fale com a gente pelo WhatsApp.

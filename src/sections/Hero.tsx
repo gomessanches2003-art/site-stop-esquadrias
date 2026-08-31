@@ -161,7 +161,7 @@ export function Hero() {
           </WhatsappButton>
           <a
             href="/#projetos"
-            className="inline-flex w-full items-center justify-center gap-2 border border-white/70 px-6 py-3.5 text-sm font-semibold uppercase tracking-[0.06em] text-white transition-colors duration-300 hover:bg-white hover:text-ink sm:w-auto"
+            className="inline-flex w-full items-center justify-center gap-2 rounded-md bg-white px-6 py-3.5 text-sm font-semibold uppercase tracking-[0.06em] text-ink transition-colors duration-300 hover:bg-paper sm:w-auto"
           >
             Conhecer projetos
           </a>
