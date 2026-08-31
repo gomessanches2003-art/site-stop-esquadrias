@@ -36,7 +36,7 @@ export function Sobre() {
     <section id="sobre" className="bg-[#f7f4f3] py-24 md:py-32">
       <div className="mx-auto max-w-7xl px-5 md:px-8">
         <div className="grid gap-14 lg:grid-cols-2 lg:gap-20">
-          <div className="relative aspect-[4/5] self-center overflow-hidden">
+          <div className="relative aspect-[4/5] self-center overflow-hidden rounded-2xl">
             <Image
               src={sobreImage}
               alt={`Rodrigo, fundador da ${siteConfig.brand}`}
