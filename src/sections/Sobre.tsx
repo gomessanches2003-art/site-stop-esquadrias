@@ -47,13 +47,7 @@ export function Sobre() {
           </div>
 
           <div className="flex flex-col justify-center">
-            <div className="flex items-center gap-3">
-              <span aria-hidden className="h-px w-8 bg-accent" />
-              <p className="font-display text-xs font-bold uppercase tracking-[0.12em] text-ink-soft">
-                Nossa história
-              </p>
-            </div>
-            <h2 className="balance mt-5 max-w-md font-display text-4xl font-extrabold uppercase leading-[1.05] tracking-tight text-ink sm:text-5xl">
+            <h2 className="balance max-w-md font-display text-3xl font-extrabold uppercase tracking-tight text-ink sm:text-4xl">
               Experiência que construiu uma história
             </h2>
 
