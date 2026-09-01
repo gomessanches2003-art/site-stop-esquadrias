@@ -149,20 +149,14 @@ export function Faq() {
       <div className="mx-auto max-w-7xl px-5 md:px-8">
         <div className="grid gap-14 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.4fr)] lg:gap-20">
           <div className="lg:sticky lg:top-28 lg:self-start">
-            <div className="flex items-center gap-3">
-              <span aria-hidden className="h-px w-8 bg-accent" />
-              <p className="font-display text-xs font-bold uppercase tracking-[0.12em] text-ink-soft">
-                Perguntas frequentes
-              </p>
-            </div>
-            <h2 className="balance mt-4 font-display text-3xl font-extrabold uppercase tracking-tight text-ink sm:text-4xl">
+            <h2 className="balance font-display text-3xl font-extrabold uppercase tracking-tight text-ink sm:text-4xl">
               Tirando suas dúvidas
             </h2>
             <p className="mt-5 max-w-sm text-sm leading-relaxed text-muted md:text-base">
               Reunimos as dúvidas mais comuns sobre nossos serviços. Não
               encontrou o que procurava?
             </p>
-            <div className="mt-8">
+            <div className="mt-8 hidden lg:block">
               <WhatsappButton message={whatsappMessages.duvida} variant="outline-dark">
                 Falar no WhatsApp
               </WhatsappButton>
@@ -181,6 +175,11 @@ export function Faq() {
                 }
               />
             ))}
+            <div className="mt-8 lg:hidden">
+              <WhatsappButton message={whatsappMessages.duvida} variant="outline-dark">
+                Falar no WhatsApp
+              </WhatsappButton>
+            </div>
           </div>
         </div>
       </div>
