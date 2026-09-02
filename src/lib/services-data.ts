@@ -23,7 +23,7 @@ export const services: Service[] = [
     slug: "esquadrias-de-aluminio",
     title: "Esquadrias de Alumínio",
     description:
-      "Soluções completas em esquadrias de alumínio sob medida para o seu projeto.",
+      "Portas, janelas e grandes vãos fabricados nas medidas do seu imóvel.",
     longDescription:
       "Nosso principal serviço: esquadrias de alumínio sob medida, com projeto, fabricação e instalação especializada para garantir vedação, resistência e acabamento impecável.",
     image: imgEsquadrias,
@@ -35,7 +35,7 @@ export const services: Service[] = [
     slug: "portas-e-janelas",
     title: "Portas e Janelas",
     description:
-      "Diversos modelos que unem design, segurança e durabilidade.",
+      "Modelos de abrir, correr e pivotantes em diferentes acabamentos.",
     longDescription:
       "Portas e janelas em alumínio em diferentes acabamentos — do preto fosco à textura amadeirada — combinando design, segurança e durabilidade para projetos residenciais e comerciais.",
     image: imgPortas,
@@ -47,7 +47,7 @@ export const services: Service[] = [
     slug: "vidros-e-fechamentos",
     title: "Vidros e Fechamentos",
     description:
-      "Vidros temperados, laminados e comuns com instalação profissional.",
+      "Fechamentos para varandas, sacadas e áreas gourmet.",
     longDescription:
       "Fechamentos de área gourmet, varandas e sacadas em vidro temperado ou laminado, com instalação profissional e acabamento em alumínio.",
     image: imgFechamentos,
@@ -58,7 +58,7 @@ export const services: Service[] = [
   {
     slug: "box-para-banheiro",
     title: "Box para Banheiro",
-    description: "Box elegantes e funcionais que valorizam o seu banheiro.",
+    description: "Box de vidro temperado fabricado para o vão do seu banheiro.",
     longDescription:
       "Box de vidro temperado sob medida, com perfis em alumínio, que unem elegância e funcionalidade para valorizar o seu banheiro.",
     image: imgBox,
@@ -70,7 +70,7 @@ export const services: Service[] = [
     slug: "guarda-corpos",
     title: "Guarda-Corpos",
     description:
-      "Segurança e sofisticação para escadas, sacadas e mezaninos.",
+      "Vidro e alumínio para escadas, sacadas e mezaninos.",
     longDescription:
       "Guarda-corpos de vidro com corrimão em alumínio, projetados para dar segurança e sofisticação a escadas, sacadas e mezaninos.",
     image: imgGuardaCorpo,
@@ -81,7 +81,7 @@ export const services: Service[] = [
   {
     slug: "espelhos-e-projetos-especiais",
     title: "Espelhos e Projetos Especiais",
-    description: "Espelhos e soluções sob medida para qualquer ambiente.",
+    description: "Corte e instalação de espelhos e peças de vidro sob medida.",
     longDescription:
       "Espelhos e soluções em vidro sob medida para qualquer ambiente, incluindo projetos especiais que fogem do padrão.",
     image: imgEspeciais,

@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Image, { type StaticImageData } from "next/image";
+import Link from "next/link";
 import heroHouseDesktop from "../../public/images/hero/hero-house-desktop.jpg";
 import heroHouseMobile from "../../public/images/hero/hero-house-mobile.jpg";
 import heroGlassDoors from "../../public/images/hero/hero-glass-doors.jpg";
@@ -134,12 +135,9 @@ export function Hero() {
       />
 
       <div className="relative mx-auto w-full max-w-7xl px-5 pb-28 pt-36 md:px-8 md:pb-20">
-        <div className="flex items-center gap-3">
-          <span aria-hidden className="h-px w-8 bg-accent" />
-          <p className="text-xs font-medium uppercase tracking-[0.22em] text-white/80">
-            Mais de {siteConfig.yearsExperience} anos de experiência
-          </p>
-        </div>
+        <p className="text-xs font-medium uppercase tracking-[0.16em] text-white/80">
+          Stop Vidros em {siteConfig.serviceArea}
+        </p>
 
         <h1 className="balance mt-5 max-w-[420px] text-[clamp(32px,9vw,46px)] font-semibold uppercase leading-[1.1] tracking-[-0.01em] text-white drop-shadow-[0_2px_16px_rgba(0,0,0,0.4)] md:max-w-[48vw] md:text-[clamp(42px,2.6vw,72px)] md:leading-[1.15]">
           Esquadrias de Alumínio
@@ -148,7 +146,7 @@ export function Hero() {
           Sob Medida
         </h1>
         <p className="mt-6 max-w-[500px] text-[16px] leading-relaxed text-white/85 md:text-[18px]">
-          Qualidade, precisão e acabamento para valorizar cada projeto.
+          Fabricação e instalação em Cornélio Procópio e região.
         </p>
 
         <div className="mt-9 flex flex-col gap-4 sm:flex-row">
@@ -159,12 +157,12 @@ export function Hero() {
           >
             Solicitar orçamento
           </WhatsappButton>
-          <a
+          <Link
             href="/#projetos"
             className="inline-flex w-full items-center justify-center gap-2 rounded-md bg-white px-6 py-3.5 text-sm font-semibold uppercase tracking-[0.06em] text-ink transition-colors duration-300 hover:bg-paper sm:w-auto"
           >
             Conhecer projetos
-          </a>
+          </Link>
         </div>
 
         <div

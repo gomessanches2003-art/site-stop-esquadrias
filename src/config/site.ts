@@ -2,10 +2,11 @@ export const siteConfig = {
   brand: "Stop Vidros",
   tagline: "Esquadrias em Alumínio",
   legalName: "Stop Vidros",
+  professionalExperienceYears: 25,
   yearsExperience: 14,
   description:
     "Esquadrias de alumínio e soluções em vidro sob medida para projetos residenciais e comerciais em Cornélio Procópio e região.",
-  url: "https://site-stop-esquadrias-wgs3.vercel.app",
+  url: "https://stopvidros.com.br",
   phoneDisplay: "(43) 98438-4849",
   phoneE164: "+5543984384849",
   whatsappNumber: "5543984384849",

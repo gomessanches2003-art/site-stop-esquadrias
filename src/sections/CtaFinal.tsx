@@ -18,10 +18,11 @@ export function CtaFinal() {
 
       <div className="relative mx-auto max-w-3xl px-5 text-center md:px-8">
         <h2 className="balance font-display text-3xl font-extrabold uppercase tracking-tight sm:text-4xl">
-          Vamos transformar o seu projeto?
+          Precisa de vidros ou esquadrias?
         </h2>
         <p className="mx-auto mt-5 max-w-md text-sm leading-relaxed text-white/75 md:text-base">
-          Fale com nossa equipe e solicite um orçamento sem compromisso.
+          Envie fotos e medidas aproximadas pelo WhatsApp para começarmos seu
+          orçamento.
         </p>
         <div className="mt-9 flex justify-center">
           <WhatsappButton message={whatsappMessages.geral} variant="solid">

@@ -10,9 +10,9 @@ export function Servicos() {
             Nossos serviços
           </p>
           <h2 className="balance mt-4 font-display text-[clamp(42px,5vw,58px)] font-semibold leading-[1.05] tracking-[-0.02em] text-ink">
-            Soluções que valorizam
+            Do projeto à instalação,
             <br />
-            cada projeto.
+            cuidamos de cada medida.
           </h2>
           <Link
             href="/servicos"

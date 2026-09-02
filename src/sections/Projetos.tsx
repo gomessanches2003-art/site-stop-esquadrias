@@ -66,8 +66,8 @@ export function Projetos() {
   return (
     <section id="projetos" className="bg-paper py-24 md:py-32">
       <Gallery4
-        title="Projetos que falam pela nossa qualidade"
-        description="Cada projeto é feito com atenção aos detalhes e compromisso com o melhor resultado."
+        title="Trabalhos realizados pela Stop Vidros"
+        description="Veja portas, janelas, fachadas e fechamentos fabricados e instalados pela nossa equipe."
         items={items}
         headerAction={
           <Link

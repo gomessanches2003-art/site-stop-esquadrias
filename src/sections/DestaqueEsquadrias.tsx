@@ -20,9 +20,9 @@ export function DestaqueEsquadrias() {
             Esquadrias de alumínio sob medida para o seu projeto
           </h2>
           <p className="mt-6 max-w-md text-sm leading-relaxed text-white/70 md:text-base">
-            Desenvolvemos esquadrias que garantem vedação, resistência e
-            beleza, valorizando o seu imóvel. Projetos personalizados com
-            acabamento impecável.
+            Fabricamos portas, janelas e grandes vãos nas medidas do seu
+            imóvel, com perfis de alumínio e instalação feita pela nossa
+            equipe.
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
             <WhatsappButton message={whatsappMessages.esquadrias} variant="solid">

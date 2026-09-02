@@ -2,11 +2,9 @@ import Image from "next/image";
 import sobreImage from "../../public/images/rodrigo-stop-vidros.jpg";
 import { siteConfig } from "@/config/site";
 
-const personalExperienceYears = 25;
-
 const highlights = [
   {
-    number: String(personalExperienceYears),
+    number: String(siteConfig.professionalExperienceYears),
     label: "Anos de experiência",
     description:
       "Conhecimento construído na prática e aperfeiçoado ao longo dos anos.",
@@ -15,7 +13,7 @@ const highlights = [
     number: String(siteConfig.yearsExperience),
     label: "Anos de Stop Vidros",
     description:
-      "Uma trajetória construída com trabalho, qualidade e confiança.",
+      "Empresa local atendendo obras residenciais e comerciais na região.",
   },
   {
     number: null,
@@ -25,9 +23,9 @@ const highlights = [
   },
   {
     number: null,
-    label: "Qualidade em cada detalhe",
+    label: "Fabricação e instalação",
     description:
-      "Soluções em vidros e esquadrias com atenção, experiência e mão de obra especializada.",
+      "Acompanhamento do levantamento das medidas até a instalação na obra.",
   },
 ];
 
@@ -53,26 +51,26 @@ export function Sobre() {
 
             <div className="mt-7 max-w-md space-y-4 text-sm leading-relaxed text-muted md:text-base">
               <p>
-                Há mais de {personalExperienceYears} anos, Rodrigo trabalha
+                Há mais de {siteConfig.professionalExperienceYears} anos, Rodrigo trabalha
                 com vidros e esquadrias, construindo sua experiência na
                 prática, aperfeiçoando técnicas e acompanhando a evolução do
                 setor.
               </p>
               <p>
                 Depois de anos de trabalho e dedicação, nasceu a Stop Vidros.
-                O que começou de forma simples cresceu com qualidade,
-                compromisso e a confiança de cada cliente.
+                O que começou de forma simples cresceu com obras entregues e
+                indicações de clientes da região.
               </p>
               <p>
-                Hoje, são mais de {personalExperienceYears} anos de
+                Hoje, são mais de {siteConfig.professionalExperienceYears} anos de
                 experiência profissional e cerca de {siteConfig.yearsExperience}{" "}
-                anos construindo a história da Stop Vidros, levando soluções
-                em vidros e esquadrias para cada novo projeto.
+                anos de Stop Vidros, fabricando e instalando vidros e
+                esquadrias em projetos residenciais e comerciais.
               </p>
             </div>
 
             <p className="mt-8 max-w-sm border-l-2 border-accent pl-5 font-display text-lg italic leading-snug text-ink md:text-xl">
-              Experiência que se transforma em confiança.
+              Medida certa, fabricação cuidadosa e instalação bem-feita.
             </p>
 
             <dl className="mt-10 grid grid-cols-1 gap-x-8 gap-y-7 border-t border-border pt-9 sm:grid-cols-2">

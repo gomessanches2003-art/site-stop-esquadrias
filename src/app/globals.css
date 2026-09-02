@@ -48,8 +48,8 @@
   --color-whatsapp: var(--color-whatsapp);
   --color-whatsapp-dark: var(--color-whatsapp-dark);
   --color-whatsapp-ink: var(--color-whatsapp-ink);
-  --font-display: var(--font-manrope);
-  --font-sans: var(--font-inter);
+  --font-display: var(--font-barlow-condensed);
+  --font-sans: var(--font-source-sans);
 
   --color-background: hsl(var(--background));
   --color-primary: hsl(var(--primary));
