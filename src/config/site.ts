@@ -2,6 +2,7 @@ export const siteConfig = {
   brand: "Stop Vidros",
   tagline: "Esquadrias em Alumínio",
   legalName: "Stop Vidros",
+  cnpj: "27.754.269/0001-10",
   professionalExperienceYears: 25,
   yearsExperience: 14,
   description:
@@ -24,6 +25,11 @@ export const siteConfig = {
     { days: "Segunda a sexta", time: "8h às 11h e 13h às 18h" },
     { days: "Sábado e domingo", time: "Fechado" },
   ],
+  payment: {
+    standard: "Em até 3x no cheque ou cartão",
+    aboveSixThousand: "Para serviços acima de R$ 6 mil, em até 10x",
+    note: "Consulte as formas de pagamento disponíveis para a sua obra",
+  },
   social: {
     // TODO: confirmar se é o Instagram comercial da empresa antes de publicar
     instagram: null as string | null,

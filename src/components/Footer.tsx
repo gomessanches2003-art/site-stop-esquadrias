@@ -83,6 +83,7 @@ export function Footer() {
             <p>
               © {year} {siteConfig.brand}. Todos os direitos reservados.
             </p>
+            <p>CNPJ {siteConfig.cnpj}</p>
             <p>
               Site por{" "}
               <a

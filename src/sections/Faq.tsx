@@ -31,9 +31,8 @@ const faqItems = [
       "Sim. Portas, janelas, box, espelhos, fechamentos e outras peças são preparados conforme as medidas de cada ambiente.",
   },
   {
-    question: "Vocês instalam espelhos sob medida?",
-    answer:
-      "Sim. Fazemos o corte e a instalação de espelhos para ambientes residenciais e comerciais.",
+    question: "Quais são as formas de pagamento?",
+    answer: `${siteConfig.payment.standard}. Para serviços acima de R$ 6 mil, oferecemos parcelamento em até 10x. ${siteConfig.payment.note}.`,
   },
 ] as const;
 
