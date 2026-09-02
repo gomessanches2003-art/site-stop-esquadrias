@@ -79,13 +79,13 @@ export default function EsquadriasPage() {
         </div>
       </section>
 
-      <section className="bg-paper py-20 md:py-28">
+      <section className="bg-paper py-16 md:py-24">
         <div className="mx-auto max-w-7xl px-5 md:px-8">
           <h2 className="balance max-w-lg font-display text-2xl font-extrabold uppercase tracking-tight text-ink sm:text-3xl">
             Diferenciais em cada esquadria
           </h2>
 
-          <dl className="mt-12 grid grid-cols-1 gap-10 border-t border-border pt-10 sm:grid-cols-2 lg:grid-cols-3">
+          <dl className="mt-9 grid grid-cols-1 gap-7 border-t border-border pt-8 sm:grid-cols-2 md:mt-12 md:gap-10 md:pt-10 lg:grid-cols-3">
             {diferenciais.map((item) => (
               <div key={item.title}>
                 <dt className="font-display text-sm font-bold uppercase tracking-[0.03em] text-ink">
@@ -100,19 +100,19 @@ export default function EsquadriasPage() {
         </div>
       </section>
 
-      <section className="bg-surface py-20 md:py-28">
+      <section className="bg-surface py-16 md:py-24">
         <div className="mx-auto max-w-7xl px-5 md:px-8">
           <h2 className="balance max-w-lg font-display text-2xl font-extrabold uppercase tracking-tight text-ink sm:text-3xl">
             Esquadrias que já entregamos
           </h2>
 
-          <div className="mt-12">
+          <div className="mt-9 md:mt-12">
             <EsquadriasGallery />
           </div>
         </div>
       </section>
 
-      <section className="bg-ink py-20 text-white md:py-28">
+      <section className="bg-ink py-16 text-white md:py-24">
         <div className="mx-auto max-w-3xl px-5 text-center md:px-8">
           <h2 className="balance font-display text-2xl font-extrabold uppercase tracking-tight sm:text-3xl">
             Vamos falar sobre a sua esquadria?

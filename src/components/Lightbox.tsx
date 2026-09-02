@@ -13,6 +13,8 @@ type Props = {
 
 export function Lightbox({ images, index, onClose, onNavigate }: Props) {
   const total = images.length;
+  const dialogRef = useRef<HTMLDivElement>(null);
+  const closeButtonRef = useRef<HTMLButtonElement>(null);
 
   const goPrev = useCallback(
     () => onNavigate((index - 1 + total) % total),
@@ -24,16 +26,35 @@ export function Lightbox({ images, index, onClose, onNavigate }: Props) {
   );
 
   useEffect(() => {
+    const previouslyFocused = document.activeElement as HTMLElement | null;
+    closeButtonRef.current?.focus();
+
     function handleKey(e: KeyboardEvent) {
       if (e.key === "Escape") onClose();
       if (e.key === "ArrowLeft") goPrev();
       if (e.key === "ArrowRight") goNext();
+      if (e.key === "Tab") {
+        const focusable = dialogRef.current?.querySelectorAll<HTMLElement>(
+          'button, [href], [tabindex]:not([tabindex="-1"])'
+        );
+        if (!focusable?.length) return;
+        const first = focusable[0];
+        const last = focusable[focusable.length - 1];
+        if (e.shiftKey && document.activeElement === first) {
+          e.preventDefault();
+          last.focus();
+        } else if (!e.shiftKey && document.activeElement === last) {
+          e.preventDefault();
+          first.focus();
+        }
+      }
     }
     document.addEventListener("keydown", handleKey);
     document.body.style.overflow = "hidden";
     return () => {
       document.removeEventListener("keydown", handleKey);
       document.body.style.overflow = "";
+      previouslyFocused?.focus();
     };
   }, [goPrev, goNext, onClose]);
 
@@ -62,6 +83,7 @@ export function Lightbox({ images, index, onClose, onNavigate }: Props) {
 
   return (
     <div
+      ref={dialogRef}
       role="dialog"
       aria-modal="true"
       aria-label={current.alt}
@@ -71,6 +93,7 @@ export function Lightbox({ images, index, onClose, onNavigate }: Props) {
       onTouchEnd={handleTouchEnd}
     >
       <button
+        ref={closeButtonRef}
         type="button"
         onClick={onClose}
         aria-label="Fechar"

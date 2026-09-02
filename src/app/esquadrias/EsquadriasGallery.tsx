@@ -53,7 +53,7 @@ export function EsquadriasGallery() {
 
       {openIndex !== null && (
         <Lightbox
-          images={images}
+          images={visible}
           index={openIndex}
           onClose={() => setOpenIndex(null)}
           onNavigate={setOpenIndex}

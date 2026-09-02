@@ -5,7 +5,7 @@ import { whatsappMessages } from "@/lib/whatsapp";
 
 export function CtaFinal() {
   return (
-    <section className="relative overflow-hidden bg-ink py-28 text-white md:py-36">
+    <section className="relative overflow-hidden bg-ink py-20 text-white md:py-28">
       <Image
         src={ctaImage}
         alt=""

@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 export default function ServicosPage() {
   return (
     <>
-      <section className="py-20 md:py-28">
+      <section className="py-14 md:py-20">
         <div className="mx-auto max-w-7xl px-5 md:px-8">
           <h1 className="balance max-w-2xl font-display text-3xl font-extrabold uppercase tracking-tight text-ink sm:text-4xl">
             Nossos serviços
@@ -32,13 +32,13 @@ export default function ServicosPage() {
         <section
           key={service.slug}
           id={service.slug}
-          className={`scroll-mt-20 py-16 md:py-20 ${
+          className={`scroll-mt-20 py-12 md:py-16 ${
             i % 2 === 1 ? "bg-surface" : "bg-paper"
           }`}
         >
           <div className="mx-auto max-w-7xl px-5 md:px-8">
             <div
-              className={`grid items-center gap-10 lg:grid-cols-2 lg:gap-16 ${
+              className={`grid items-center gap-7 lg:grid-cols-2 lg:gap-16 ${
                 i % 2 === 1 ? "lg:[&>*:first-child]:order-2" : ""
               }`}
             >
@@ -59,7 +59,7 @@ export default function ServicosPage() {
                 <p className="mt-5 max-w-md text-sm leading-relaxed text-muted md:text-base">
                   {service.longDescription}
                 </p>
-                <div className="mt-8 flex flex-wrap gap-4">
+                <div className="mt-6 flex flex-wrap gap-4 md:mt-8">
                   <WhatsappButton message={service.message} variant="solid">
                     Solicitar orçamento
                   </WhatsappButton>

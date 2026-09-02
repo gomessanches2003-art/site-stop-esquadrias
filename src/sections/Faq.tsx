@@ -7,67 +7,33 @@ import { whatsappMessages } from "@/lib/whatsapp";
 
 const faqItems = [
   {
-    question: `Quais cidades a ${siteConfig.brand} atende, além de Cornélio Procópio?`,
+    question: "Quais cidades vocês atendem?",
     answer:
-      "Atendemos Cornélio Procópio e toda a região em um raio de até 50 km, incluindo as cidades vizinhas. Em casos especiais também atendemos fora desse raio — fale com a gente pelo WhatsApp para confirmar seu endereço.",
+      "Atendemos Cornélio Procópio e cidades da região em um raio de até 50 km. Para outros locais, consulte nossa equipe pelo WhatsApp.",
   },
   {
     question: `Há quanto tempo a ${siteConfig.brand} está no mercado?`,
-    answer: `São mais de ${siteConfig.yearsExperience} anos de experiência no ramo de vidros e esquadrias de alumínio, com uma trajetória construída a partir da confiança de cada cliente atendido na região.`,
-  },
-  {
-    question: "A empresa segue alguma norma técnica nas instalações?",
-    answer:
-      "Sim. Todos os projetos seguem as normas técnicas da ABNT para vidros e esquadrias, e levamos em conta fatores como temperatura e pressão do vento da região na hora de definir materiais e método de instalação, especialmente em coberturas e fechamentos.",
+    answer: `A Stop Vidros atua há cerca de ${siteConfig.yearsExperience} anos. Rodrigo, fundador da empresa, trabalha com vidros e esquadrias há mais de ${siteConfig.professionalExperienceYears} anos.`,
   },
   {
     question: "Como faço um orçamento?",
     answer:
-      "O jeito mais rápido é chamar a gente no WhatsApp. Conte o que você precisa (tipo de vidro, esquadria, box, portão etc.) e, se possível, envie fotos ou medidas do local — retornamos com as informações do seu orçamento.",
+      "Chame pelo WhatsApp, diga qual serviço precisa e envie fotos ou medidas aproximadas do local. Nossa equipe retorna com as orientações.",
   },
   {
-    question: "Quanto tempo demora para instalar uma esquadria de alumínio ou um box de vidro?",
+    question: "Qual é o prazo do serviço?",
     answer:
-      "O prazo varia de acordo com o tipo de serviço, a complexidade do projeto e se as peças são sob medida. Na conversa pelo WhatsApp já conseguimos dar uma estimativa mais precisa para o seu caso.",
+      "O prazo depende das medidas, dos materiais e da complexidade da instalação. A estimativa é informada durante o orçamento.",
   },
   {
-    question: "Vocês fazem vidros e esquadrias fora do padrão (sob medida)?",
+    question: "Vocês trabalham sob medida?",
     answer:
-      "Sim, essa é uma das nossas especialidades. Para vidros e esquadrias fora do padrão, contamos com apoio técnico especializado para garantir que a peça fique segura e no tamanho certo para o seu projeto.",
-  },
-  {
-    question: "Qual a diferença entre vidro temperado e vidro comum?",
-    answer:
-      "O vidro temperado passa por um processo térmico que o torna muito mais resistente a impactos que o vidro comum e, quando quebra, se fragmenta em pequenos pedaços sem pontas cortantes — por isso é o mais indicado para box, portas, janelas e guarda-corpos.",
-  },
-  {
-    question: "Qual o melhor tipo de vidro para box de banheiro?",
-    answer:
-      "Para box de banheiro, o recomendado é sempre o vidro temperado, pela segurança em caso de quebra. A espessura ideal depende do tamanho do vão e do modelo do box — podemos te ajudar a definir isso na hora do orçamento.",
-  },
-  {
-    question: "Esquadria de alumínio ou de ferro: qual vale mais a pena?",
-    answer:
-      "O alumínio não enferruja, pesa menos, exige menos manutenção e tem acabamento mais moderno — por isso é a opção mais usada hoje em janelas, portas e portões. O ferro pode ter custo inicial menor, mas exige pintura e manutenção periódica contra ferrugem.",
-  },
-  {
-    question: "Portões e esquadrias de alumínio precisam de manutenção?",
-    answer:
-      "A manutenção é bem mais simples que a do ferro: basta limpeza periódica e, de tempos em tempos, verificar roldanas, dobradiças e borrachas de vedação. Se notar dificuldade para abrir/fechar ou ruído, vale chamar a gente para dar uma olhada.",
-  },
-  {
-    question: "Vocês fazem cobertura de vidro ou policarbonato?",
-    answer:
-      "Sim, fazemos cobertura em vidro, em policarbonato e em alumínio para áreas externas, varandas, garagens e quintais — sempre considerando a estrutura e as condições climáticas da região para uma instalação segura.",
+      "Sim. Portas, janelas, box, espelhos, fechamentos e outras peças são preparados conforme as medidas de cada ambiente.",
   },
   {
     question: "Vocês instalam espelhos sob medida?",
     answer:
-      "Sim, fazemos espelhos sob medida para banheiros, quartos, salas, academias e comércios, com o corte e a fixação adequados para cada ambiente.",
-  },
-  {
-    question: `Por que escolher a ${siteConfig.brand}?`,
-    answer: `Além de ${siteConfig.yearsExperience} anos de experiência, seguimos as normas ABNT, avaliamos as condições do local antes de instalar e temos clientes antigos na região que podem servir de referência do nosso trabalho. Atendimento direto pelo WhatsApp, sem burocracia.`,
+      "Sim. Fazemos o corte e a instalação de espelhos para ambientes residenciais e comerciais.",
   },
 ] as const;
 
@@ -105,7 +71,7 @@ function FaqItem({
   onToggle: () => void;
 }) {
   return (
-    <div className="border-t border-border py-6 first:border-t-0">
+    <div className="border-t border-border py-5 first:border-t-0 md:py-6">
       <button
         type="button"
         onClick={onToggle}
@@ -144,10 +110,10 @@ export function Faq() {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   return (
-    <section id="faq" className="bg-paper py-24 md:py-32">
+    <section id="faq" className="bg-paper py-16 md:py-24">
       <FaqSchema />
       <div className="mx-auto max-w-7xl px-5 md:px-8">
-        <div className="grid gap-14 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.4fr)] lg:gap-20">
+        <div className="grid gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.4fr)] lg:gap-20">
           <div className="lg:sticky lg:top-28 lg:self-start">
             <h2 className="balance font-display text-3xl font-extrabold uppercase tracking-tight text-ink sm:text-4xl">
               Tirando suas dúvidas

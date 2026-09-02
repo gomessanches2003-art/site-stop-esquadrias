@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 
 export default function ProjetosPage() {
   return (
-    <section className="py-20 md:py-28">
+    <section className="py-14 md:py-20">
       <div className="mx-auto max-w-7xl px-5 md:px-8">
         <h1 className="balance max-w-2xl font-display text-3xl font-extrabold uppercase tracking-tight text-ink sm:text-4xl">
           Projetos realizados pela {siteConfig.brand}
@@ -22,7 +22,7 @@ export default function ProjetosPage() {
           box para banheiro e guarda-corpos.
         </p>
 
-        <div className="mt-12">
+        <div className="mt-9 md:mt-12">
           <GalleryClient />
         </div>
       </div>

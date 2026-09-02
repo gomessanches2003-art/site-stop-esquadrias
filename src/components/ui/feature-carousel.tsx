@@ -81,8 +81,8 @@ export function FeatureCarousel() {
 
   return (
     <div className="mx-auto w-full max-w-7xl px-5 md:px-8">
-      <div className="relative flex min-h-[600px] flex-col overflow-hidden border border-border lg:aspect-video lg:flex-row">
-        <div className="relative z-30 flex w-full min-h-[350px] flex-col items-start justify-center overflow-hidden bg-ink px-8 md:min-h-[450px] md:px-16 lg:h-full lg:w-[40%] lg:pl-16">
+      <div className="relative flex flex-col overflow-hidden border border-border lg:aspect-video lg:min-h-[600px] lg:flex-row">
+        <div className="relative z-30 flex min-h-[290px] w-full flex-col items-start justify-center overflow-hidden bg-ink px-5 sm:px-8 md:min-h-[420px] md:px-16 lg:h-full lg:w-[40%] lg:pl-16">
           <div className="absolute inset-x-0 top-0 z-40 h-12 bg-gradient-to-b from-ink via-ink/80 to-transparent md:h-20 lg:h-16" />
           <div className="absolute inset-x-0 bottom-0 z-40 h-12 bg-gradient-to-t from-ink via-ink/80 to-transparent md:h-20 lg:h-16" />
           <div className="relative z-20 flex h-full w-full items-center justify-center lg:justify-start">
@@ -154,7 +154,7 @@ export function FeatureCarousel() {
           </div>
         </div>
 
-        <div className="relative flex min-h-[500px] flex-1 items-center justify-center overflow-hidden border-t border-border bg-paper px-6 py-16 md:min-h-[600px] md:px-12 md:py-24 lg:h-full lg:border-l lg:border-t-0 lg:px-10 lg:py-16">
+        <div className="relative flex min-h-[430px] flex-1 items-center justify-center overflow-hidden border-t border-border bg-paper px-5 py-8 md:min-h-[560px] md:px-12 md:py-16 lg:h-full lg:border-l lg:border-t-0 lg:px-10 lg:py-16">
           <div className="relative flex aspect-[4/5] w-full max-w-[420px] items-center justify-center">
             {FEATURES.map((feature, index) => {
               const status = getCardStatus(index);
@@ -201,7 +201,7 @@ export function FeatureCarousel() {
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: 10 }}
-                        className="pointer-events-none absolute inset-x-0 bottom-0 flex flex-col justify-end bg-gradient-to-t from-ink/95 via-ink/50 to-transparent p-8 pr-20 pt-32 md:p-10"
+                        className="pointer-events-none absolute inset-x-0 bottom-0 flex flex-col justify-end bg-gradient-to-t from-ink/95 via-ink/50 to-transparent p-6 pr-14 pt-24 md:p-10"
                       >
                         <h3 className="font-display text-2xl font-bold leading-[1.08] tracking-[-0.015em] text-white md:text-[32px]">
                           {feature.label}

@@ -15,7 +15,7 @@ function Field({ label, children }: { label: string; children: React.ReactNode }
 
 export function Contato() {
   return (
-    <section id="contato" className="bg-surface pt-24 pb-16 md:py-32">
+    <section id="contato" className="bg-surface pb-20 pt-16 md:py-24">
       <div className="mx-auto max-w-7xl px-5 md:px-8">
         <div className="max-w-2xl">
           <h2 className="balance font-display text-3xl font-extrabold uppercase tracking-tight text-ink sm:text-4xl">

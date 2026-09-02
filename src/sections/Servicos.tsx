@@ -3,7 +3,7 @@ import { FeatureCarousel } from "@/components/ui/feature-carousel";
 
 export function Servicos() {
   return (
-    <section id="servicos" className="bg-paper py-24 md:py-32">
+    <section id="servicos" className="bg-paper py-16 md:py-24">
       <div className="mx-auto max-w-7xl px-5 md:px-8">
         <div className="mx-auto flex max-w-2xl flex-col items-center text-center">
           <p className="font-display text-xs font-bold uppercase tracking-[0.2em] text-accent">
@@ -23,7 +23,7 @@ export function Servicos() {
         </div>
       </div>
 
-      <div className="mt-14">
+      <div className="mt-10 md:mt-14">
         <FeatureCarousel />
       </div>
     </section>

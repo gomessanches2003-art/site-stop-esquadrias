@@ -99,7 +99,7 @@ export function Hero() {
   return (
     <section
       id="inicio"
-      className="relative flex min-h-[700px] h-[100dvh] items-end overflow-hidden bg-ink md:h-[720px] md:min-h-0"
+      className="relative flex h-[calc(100svh-4.5rem)] min-h-[620px] items-end overflow-hidden bg-ink md:h-[720px] md:min-h-0"
     >
       {slides.map((slide, i) => {
         const isActive = i === active;

@@ -112,7 +112,7 @@ const Gallery4 = ({ title, description, items, headerAction }: Gallery4Props) =>
                 className="max-w-[320px] pl-[20px] lg:max-w-[360px]"
               >
                 <Link href={item.href} className="group block">
-                  <div className="relative h-full min-h-[27rem] max-w-full overflow-hidden md:aspect-[5/4] lg:aspect-[16/9]">
+                  <div className="relative h-full min-h-[23rem] max-w-full overflow-hidden md:min-h-[27rem] md:aspect-[5/4] lg:aspect-[16/9]">
                     <Image
                       src={item.image}
                       alt={item.title}

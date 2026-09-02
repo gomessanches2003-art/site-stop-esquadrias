@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useMemo, useState } from "react";
 import Image from "next/image";
 import { Lightbox } from "@/components/Lightbox";
 import {
@@ -28,19 +28,26 @@ export function GalleryClient() {
     [filter]
   );
 
-  useEffect(() => {
+  function selectFilter(nextFilter: ProjectCategory | "todos") {
+    setFilter(nextFilter);
     setVisibleCount(PAGE_SIZE);
-  }, [filter]);
+    setOpenIndex(null);
+  }
 
   const visible = filtered.slice(0, visibleCount);
   const hasMore = visibleCount < filtered.length;
 
   return (
     <div>
-      <div className="-mx-5 flex gap-2 overflow-x-auto px-5 pb-2 [scrollbar-width:none] sm:mx-0 sm:flex-wrap sm:px-0 sm:pb-0 [&::-webkit-scrollbar]:hidden">
+      <p className="mb-3 text-xs text-muted sm:hidden">
+        Deslize para ver as categorias
+      </p>
+      <div className="relative -mr-5 sm:mr-0">
+        <div aria-hidden className="pointer-events-none absolute inset-y-0 right-0 z-10 w-10 bg-gradient-to-l from-paper to-transparent sm:hidden" />
+        <div className="-ml-5 flex gap-2 overflow-x-auto px-5 pb-2 pr-12 [scrollbar-width:none] sm:ml-0 sm:flex-wrap sm:px-0 sm:pb-0 sm:pr-0 [&::-webkit-scrollbar]:hidden">
         <button
           type="button"
-          onClick={() => setFilter("todos")}
+          onClick={() => selectFilter("todos")}
           className={`shrink-0 whitespace-nowrap rounded-md px-4 py-2 text-xs font-semibold uppercase tracking-[0.08em] transition-colors ${
             filter === "todos"
               ? "bg-ink text-white"
@@ -53,7 +60,7 @@ export function GalleryClient() {
           <button
             key={cat}
             type="button"
-            onClick={() => setFilter(cat)}
+            onClick={() => selectFilter(cat)}
             className={`shrink-0 whitespace-nowrap rounded-md px-4 py-2 text-xs font-semibold uppercase tracking-[0.08em] transition-colors ${
               filter === cat
                 ? "bg-ink text-white"
@@ -63,6 +70,7 @@ export function GalleryClient() {
             {projectCategoryLabels[cat]}
           </button>
         ))}
+        </div>
       </div>
 
       <div className="mt-10 grid grid-cols-2 gap-1 sm:grid-cols-3 lg:grid-cols-4">
@@ -101,7 +109,7 @@ export function GalleryClient() {
 
       {openIndex !== null && (
         <Lightbox
-          images={filtered}
+          images={visible}
           index={openIndex}
           onClose={() => setOpenIndex(null)}
           onNavigate={setOpenIndex}

@@ -64,7 +64,7 @@ const items: Gallery4Item[] = [
 
 export function Projetos() {
   return (
-    <section id="projetos" className="bg-paper py-24 md:py-32">
+    <section id="projetos" className="bg-paper py-16 md:py-24">
       <Gallery4
         title="Trabalhos realizados pela Stop Vidros"
         description="Veja portas, janelas, fachadas e fechamentos fabricados e instalados pela nossa equipe."
