@@ -85,6 +85,7 @@ function SlideImage({
 
 export function Hero() {
   const [active, setActive] = useState(0);
+  const [loadedSlides, setLoadedSlides] = useState<Set<number>>(() => new Set([0]));
 
   useEffect(() => {
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
@@ -96,12 +97,27 @@ export function Hero() {
     return () => clearInterval(id);
   }, []);
 
+  useEffect(() => {
+    const nextIndex = (active + 1) % slides.length;
+    const preloadDelay = active === 0 ? 1500 : 0;
+    const id = setTimeout(() => {
+      setLoadedSlides((prev) => {
+        if (prev.has(nextIndex)) return prev;
+        const next = new Set(prev);
+        next.add(nextIndex);
+        return next;
+      });
+    }, preloadDelay);
+    return () => clearTimeout(id);
+  }, [active]);
+
   return (
     <section
       id="inicio"
       className="relative flex h-[calc(100svh-4.5rem)] min-h-[620px] items-end overflow-hidden bg-ink md:h-[720px] md:min-h-0"
     >
       {slides.map((slide, i) => {
+        if (!loadedSlides.has(i)) return null;
         const isActive = i === active;
         return (
           <div key={i} className="absolute inset-0" aria-hidden={!isActive}>

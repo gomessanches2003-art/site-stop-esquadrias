@@ -81,7 +81,7 @@ export function FeatureCarousel() {
 
   return (
     <div className="mx-auto w-full max-w-7xl px-5 md:px-8">
-      <div className="relative flex flex-col overflow-hidden border border-border lg:aspect-video lg:min-h-[600px] lg:flex-row">
+      <div className="relative flex w-full flex-col overflow-hidden border border-border lg:aspect-video lg:min-h-[600px] lg:flex-row">
         <div className="relative z-30 flex min-h-[290px] w-full flex-col items-start justify-center overflow-hidden bg-ink px-5 sm:px-8 md:min-h-[420px] md:px-16 lg:h-full lg:w-[40%] lg:pl-16">
           <div className="absolute inset-x-0 top-0 z-40 h-12 bg-gradient-to-b from-ink via-ink/80 to-transparent md:h-20 lg:h-16" />
           <div className="absolute inset-x-0 bottom-0 z-40 h-12 bg-gradient-to-t from-ink via-ink/80 to-transparent md:h-20 lg:h-16" />
