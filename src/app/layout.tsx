@@ -22,24 +22,29 @@ const sourceSans = Source_Sans_3({
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: `${siteConfig.brand} — Esquadrias de Alumínio e Vidros em Cornélio Procópio-PR`,
+    default: `${siteConfig.brand} — Esquadrias, Portas, Janelas e Box de Vidro em Cornélio Procópio-PR`,
     template: `%s — ${siteConfig.brand}`,
   },
   description: siteConfig.description,
   keywords: [
     "esquadrias de alumínio Cornélio Procópio",
     "vidraçaria Cornélio Procópio",
+    "janela de alumínio",
+    "porta de alumínio",
     "portas e janelas de alumínio",
-    "vidros sob medida",
+    "box de vidro",
     "box para banheiro",
+    "vidro temperado",
+    "vidros sob medida",
     "guarda-corpo de vidro",
+    "espelho sob medida",
   ],
   openGraph: {
     type: "website",
     locale: "pt_BR",
     url: siteConfig.url,
     siteName: siteConfig.brand,
-    title: `${siteConfig.brand} — Esquadrias de Alumínio e Vidros em Cornélio Procópio-PR`,
+    title: `${siteConfig.brand} — Esquadrias, Portas, Janelas e Box de Vidro em Cornélio Procópio-PR`,
     description: siteConfig.description,
   },
   alternates: {

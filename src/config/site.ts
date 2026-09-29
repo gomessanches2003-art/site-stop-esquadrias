@@ -6,7 +6,7 @@ export const siteConfig = {
   professionalExperienceYears: 25,
   yearsExperience: 14,
   description:
-    "Esquadrias de alumínio e soluções em vidro sob medida para projetos residenciais e comerciais em Cornélio Procópio e região.",
+    "Esquadrias de alumínio, portas, janelas, box de vidro e soluções em vidro sob medida para projetos residenciais e comerciais em Cornélio Procópio e região.",
   url: "https://stopvidros.com.br",
   phoneDisplay: "(43) 98438-4849",
   phoneE164: "+5543984384849",

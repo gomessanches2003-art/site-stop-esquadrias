@@ -9,6 +9,7 @@ export const whatsappMessages = {
   geral: "Olá! Gostaria de solicitar um orçamento.",
   esquadrias:
     "Olá! Gostaria de solicitar um orçamento para esquadrias de alumínio.",
+  box: "Olá! Gostaria de solicitar um orçamento para box de vidro para banheiro.",
   servicos: "Olá! Gostaria de saber mais sobre os serviços da Stop Vidros.",
   projetos:
     "Olá! Vi os projetos da Stop Vidros e gostaria de mais informações.",
